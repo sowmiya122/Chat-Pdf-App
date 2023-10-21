@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat PDF App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylee.css') }}">
+</head>
+<body>
+    <h1>Chat PDF App</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf" required>
+        <br>
+        <label for="question">Ask a question:</label>
+        <input type="text" name="question" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
